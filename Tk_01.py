@@ -4,8 +4,8 @@ from tkinter import messagebox
 
 # ── 1. Crear la ventana principal (root) ─────────────────────
 root = tk.Tk()
-root.title('Lab Tk-1 — Mi Primera Ventana')
-root.geometry('420x280')          # ancho x alto en píxeles
+root.title('Lab Tk-1 — Practica inicial')
+root.geometry('620x480')          # ancho x alto en píxeles
 root.resizable(True, True)        # permitir redimensionar
 root.configure(bg='#f0f4f8')      # color de fondo
 
@@ -19,9 +19,9 @@ var_resultado = tk.StringVar(value='(aquí aparecerá el saludo)')
 lbl_titulo = tk.Label(
     root,
     text='Bienvenido a Tkinter',
-    font=('Arial', 14, 'bold'),
+    font=('Arial', 28, 'bold'),
     bg='#f0f4f8',
-    fg='#1a3a5c'
+    fg="#f2920d"
 )
 
 # Label: instrucción
