@@ -38,17 +38,15 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
 
-
+ temp  = dht.readTemperature();
+  hum    = dht.readHumidity();
+  pres = bmp.readPressure();
+  alt = bmp.readAltitude(pres);
   // Comprobamos si ha habido algún error en la lectura inicial o global
-  if (isnan(temperature) || isnan(humidity)) {
+  if (isnan(temp) || isnan(hum)) {
     Serial.println("Error obteniendo los datos del sensor DHT22");
     return;
   }
-
-  temp  = dht.readTemperature();
-  hum    = dht.readHumidity();
-  pres = bmp.readPressure();
-  alt = bmp.readAltitude(presion);
 
     Serial.print(n);
     Serial.print(",");
